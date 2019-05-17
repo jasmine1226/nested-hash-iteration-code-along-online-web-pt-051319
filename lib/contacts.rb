@@ -21,9 +21,6 @@ def remove_strawberry(contacts)
   #      data.delete_if {|ice_cream| ice_cream == "strawberry"}
   #    end
   #  end
-    info[:favorite_ice_cream_flavors].each do |ice_cream|
-      ice_cream.delete_if {|flavor| flavor == "strawberry"}
-    end
-
+    info[:favorite_ice_cream_flavors].delete_if {|flavor| flavor == "strawberry"}
   end
 end
